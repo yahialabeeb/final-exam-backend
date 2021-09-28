@@ -1,4 +1,4 @@
-'use strict'
+"use strict"
 const express = require('express');
 
 const server = express();
@@ -18,7 +18,7 @@ let mongoUrl = process.env.MONGO_URL
 Mongoose.connect(mongoUrl)
 // Urls 
 server.get('/',()=>{
-    <h1>HELLO</h1>
+   console.log("hello");
 })
 server.get('/fruits',allData)
 
